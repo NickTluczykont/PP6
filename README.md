@@ -102,11 +102,14 @@ Place your completed `print.sh` in `solutions/` and commit. Then link it here:
 
 #### Reflection Questions
 
-1. **What is the difference between `printf` and `echo` in Bash?**
-2. **What is the role of `~/.bashrc` in your shell environment?**
-3. **Explain the difference between sourcing (`source ~/.bashrc`) and executing (`./print.sh`).**
+1. echo für einfache Ausgaben und printf ist für genaue Formatierung z. B. bei Zahlen, Tabellenausgabe, Zeilenumbruch-Kontrolle
+2. Die Datei ~/.bashrc ist eine Konfigurationsdatei für aufrufen und schließen eines Terminals
+3.  . ~/.bashrc	bleiben in der aktuellen Shell erhalten\./print.sh gehen nach dem Skript verloren
 
 ---
+
+![Screenshot 2025-05-29 134503](https://github.com/user-attachments/assets/62f93a7f-7f47-4d6d-a842-fc734fb2b936)
+
 
 ### Task 2: GAS Printing (32‑bit Linux)
 
@@ -153,15 +156,14 @@ _start:
 
 **Solution Reference**
 
-```
-[print.s](https://github.com/YOUR_USERNAME/REPO_NAME/blob/main/solutions/print.s)
-```
+![Screenshot 2025-05-29 154621](https://github.com/user-attachments/assets/7852e4c1-4583-4542-b152-bbfce79273b4)
+
 
 #### Reflection Questions
 
-1. **What is a file descriptor and how does the OS use it?**
-2. **How can you obtain or duplicate a file descriptor for another resource (e.g., a file or socket)?**
-3. **What might happen if you use an invalid file descriptor in a syscall?**
+1. Ein Dateideskriptor wird als pointer benutzt, und im Betriebssystem ist dieser als Rückgabe deklariert diese wird benutst um befehle auszuführen
+2. Mit dup() oder dup2() in C
+3. Der Systemaufruf gibt -1 zurück
 
 ---
 
@@ -193,9 +195,12 @@ int main(void) {
 
 **Solution Reference**
 
-```
-[print.c](https://github.com/YOUR_USERNAME/REPO_NAME/blob/main/solutions/print.c)
-```
+
+![Screenshot 2025-05-29 164023](https://github.com/user-attachments/assets/189dc5b6-ebda-47f6-a864-2b4bb758f1a4)
+
+![Screenshot 2025-05-29 164331](https://github.com/user-attachments/assets/a521ccc6-04e9-4f90-889a-b65459b32287)
+
+
 
 #### Reflection Questions
 
