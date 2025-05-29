@@ -241,7 +241,9 @@ if __name__ == "__main__":
 **Solution Reference**
 
 ```
-[print.py](https://github.com/YOUR_USERNAME/REPO_NAME/blob/main/solutions/print.py)
+![Screenshot 2025-05-29 181801](https://github.com/user-attachments/assets/09602196-f015-4a8c-88e2-8bda1c671ecb)
+
+
 ```
 
 #### Reflection Questions
